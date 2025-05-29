@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: white;
+  color: #222;
+}
+
+body, html, #root {
+  font-family: 'Satoshi', sans-serif;
+}
+
+header {
+  color: rgb(71, 97, 248);
+  padding: 1.5rem 2rem;
+  box-shadow: none;
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+
+nav li a:hover {
+  color: #8B7FF5 !important;
+  text-decoration: none;
+}
+main {
+  max-width: none;
+  margin: 10rem auto 0 auto;
+  padding: 0 32px;
+  border-radius: 10px;
+  box-shadow: none;
+
+}
+
+main h1 {
+  
+  font-size: 4.6875rem;
+  font-weight: 700;
+  text-align: left;
+  justify-content: left;
+  margin: 0 ;
+  line-height: 1.5;
+  margin-left: 0;
+}
+
+main p {
+  text-align: left;
+  margin-left: 0;         /* Remove negative margin */
+  font-size: 1.25rem;
+  line-height: 0.5;       /* Use a normal line height */
+  margin-bottom: 1.5625rem;
+  font-weight: 400;       /* Normal weight */
+}
+
+/* filepath: c:\Users\USER\Desktop\gemspay\src\styles\main.css */
+header h1, .brand-title {
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+}
+
+
+.signup-btn:hover {
+  background: #8B7FF5 !important;
+}
+
+.pencco-btn:hover {
+  background-color: white !important;
+  text-decoration: none;
+  color: #8B7FF5 !important;
+}
+
+main .start-btn {
+  margin-top: 10px; /* or any value you want */
+  margin-left: 0; /* if you want to keep it aligned to the left */
+  display: inline-block; /* ensures margin-top works as expected */
+}
+
+.getstarted-btn {
+  padding: 1.25rem 2.1875rem !important;   /* Reduce horizontal padding */
+  font-size: 1.25rem !important;     /* Slightly smaller font */
+  min-width: unset !important;    /* Remove any min-width if set elsewhere */
+  width: auto !important;         /* Let the button size to its content */
+  border-radius: 62.4375rem;
+  font-weight: 550;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.getstarted-btn:hover {
+  background-color: #8B7FF5 !important;
+  text-decoration: none;
+  color: white !important;
+}
+
+.overlay-background {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.4));
+  background-size: 50% 100%; /* Reduced background-size value */
+  backdrop-filter: blur(5px);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.newsletter-input {
+        font-size: 0.875rem;
+        opacity: 0.5;
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    padding: 0.625rem;
+    font-size: 1rem;
+  }
+  .main-content {
+    padding: 1.25rem;
+    font-size: 0.875rem;
+  }
+  .footer {
+    padding: 0.625rem;
+    font-size: 0.75rem;
+  }
+}
