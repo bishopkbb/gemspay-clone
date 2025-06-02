@@ -22,11 +22,12 @@ function Home() {
       {/* SVG background behind header and main */}
       <svg
         viewBox="0 0 980 1800"
+        className="desktop-svg"
         style={{
           position: "absolute",
           top: 0,
           right: 0,
-          zIndex: 1,
+          zIndex: -1,
           width: "75vw",
           height: "100vh",
           minWidth: 400,
@@ -70,506 +71,653 @@ function Home() {
         </a>
       </header>
 
-      <main style={{ position: "relative", overflow: "hidden", zIndex: 1, marginTop: "20px" }}>
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-            gap: "2rem",
-            minHeight: "30rem",
-            margin: "2rem 0",
-            flexWrap: "wrap",
-            marginLeft: "0.0625rem",
-          }}
-        >
-          {/* Texts on the left */}
-          <div style={{ flex: 1.2, minWidth: 280, textAlign: "Left", marginLeft: 0, paddingLeft: 0, marginBottom: 0 }}>
-            <a
-              href="#"
-              className="pencco-btn"
-              style={{
-                background: "#8e82fe",
-                color: "white",
-                padding: "0.5px 5px",
-                borderRadius: "62.4375rem",
-                fontWeight: 550,
-                textDecoration: "none",
-                boxShadow: "0 0.125rem 0.5rem rgba(122,111,240,0.12)",
-                border: "none",
-                fontSize: "1rem",
-                transition: "background 0.2s",
-                cursor: "pointer",
-                display: "inline-flex",
-                alignItems: "center",
-                marginBottom: "1.5rem",
-                marginTop: "6.25rem",
-              }}
-            >
-              Pencco is now live
-              <span style={{ marginLeft: 10, display: "flex", alignItems: "center" }}>
-                <FaArrowRight size={17} />
-              </span>
-            </a>
-
-            <h1 style={{ margin: 0 }}>Gemspay!</h1>
-            <h1 style={{ margin: 0 }}>A New Way To</h1>
-            <h1 style={{ margin: 0 }}>Pay</h1>
-            <p>Developing various solutions that will seamlessly integrate with</p>
-            <p>the leading payment and switching platform providers in</p>
-            <p>Nigeria.</p>
-            <br />
-
-            {/* Get Started button */}
-            <a
-              href="#"
-              className="start-btn"
-              style={{
-                background: "black",
-                color: "white",
-                padding: "0.9375rem 2.5rem",
-                borderRadius: "62.4375rem",
-                fontWeight: 550,
-                textDecoration: "none",
-                boxShadow: "0 0.125rem 0.5rem rgba(122,111,240,0.12)",
-                border: "none",
-                fontSize: "1.25rem",
-                transition: "background 0.2s",
-                cursor: "pointer",
-                display: "inline-flex",
-                alignItems: "center",
-                justifyContent: "center"
-              }}
-            >
-              Get Started
-              <span
-                style={{
-                  marginLeft: 16,
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  background: "#fff",
-                  borderRadius: "50%",
-                  width: 38,
-                  height: 38,
-                }}
-              >
-                <FaArrowRight size={22} color="#111" />
-              </span>
-            </a>
-          </div>
-
-          {/* Image on the right */}
-          <div style={{ flex: 1, display: "flex", justifyContent: "flex-end", minWidth: 320, paddingRight: 0 }}>
-            <img
-              src={mainImage}
-              alt="Main Visual"
-              style={{
-                maxWidth: "125rem",
-                width: "100%",
-                height: "37.5rem",
-                borderRadius: "1.125rem",
-                boxShadow: "none",
-                zIndex: 3,
-                position: "relative",
-                marginRight: "-2.5rem",
-                marginBottom: "0",
-                marginTop: "-12.5rem"
-              }}
-            />
-          </div>
-        </div>
-
-        <section
-          style={{
-            marginLeft: "-9.375rem",
-            color: "white",
-            padding: "15.625rem 0.625rem",
-            borderRadius: "0",
-            fontWeight: 550,
-            textDecoration: "none",
-            border: "none",
-            fontSize: "1rem",
-            transition: "background 0.2s",
-            cursor: "pointer",
-            display: "flex",
-            alignItems: "center",
-            zIndex: 2,
-            marginTop: "15.625rem",
-            padding: "0.625rem"
-          }}
-        >
-          {/* Texts on the left */}
-          <div
-            style={{
-              flex: 1.07,
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              paddingRight: "0",
-              gap: "1.5rem",
-              marginLeft: "6.875rem",
-            }}
-          >
-            <h2 style={{ fontSize: "1.3rem", margin: 0, color: "#8e82fe" }}>
-              Growth enabler for businesses
-            </h2>
-            <p style={{ fontSize: "2.5rem", color: "#222", margin: 0, fontWeight: 600 }}>
-              An all-inclusive centralized 
-            </p>
-             <p style={{ fontSize: "2.5rem", color: "#222", margin: 0, fontWeight: 600,  }}>
-              payment platform
-            </p>
-            <p style={{ fontSize: "1.17rem", color: "#444", lineHeight: 1.8, margin: 0, fontWeight: 500, marginTop: "30px" }}>
-              GemsPay is an all-inclusive centralized payment platform that enables clients increase efficiency in their payments processing by ways of receiving and making payments across diverse channels. The overarching goal is to become a growth enabler for business, allowing them to expand by delivering the essential strategies necessary for achieving exponential growth.
-            </p>
-
-               {/* Get Started button */}
-           // ...inside the benefit section, replacing the old Get Started button...
-<a
-  href="#"
-  className="getstarted-btn"
-  style={{
-    background: "black",
-    color: "white",
-    padding: "1.25rem 2.5rem",
-    borderRadius: "62.4375rem",
-    fontWeight: 550,
-    textDecoration: "none",
-    boxShadow: "0 0.125rem 0.5rem rgba(122,111,240,0.12)",
-    border: "none",
-    fontSize: "0.9375rem",
-    transition: "background 0.2s",
-    cursor: "pointer",
-    display: "inline-flex",
-    alignItems: "center",
-    justifyContent: "center",
-    width: "auto",
-    minWidth: "unset",
-     maxWidth: "10rem", // limit max width
-    marginTop: "1px"
-  }}
->
-  Get Started
-  <span style={{
-    marginLeft: 8,
-    display: "flex",
-    alignItems: "center"
-  }}>
-  </span>
-</a>
-
-          </div>
-          {/* Picture on the right */}
-          <div
-            style={{
-              flex: 1.2,
-              minWidth: 400,
-              minHeight: 700,
-              background: "#f5f5fa",
-              borderRadius: "0.75rem",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              marginLeft: "10vw",
-              height: "20rem",
-            }}
-          >
-            <img
-              src={benefitImage}
-              alt="Benefit"
-              style={{
-                width: "100%",
-                height: "100%",
-                borderRadius: "0",
-                boxShadow: "none"
-              }}
-            />
-
-          </div>
-        </section>
-
-        {/* Why Choose Gemspay Section */}
-        <section
-          style={{
-            background: "#fff",
-            color: "#222",
-            padding: "5px 0",
-            margin: "2.5rem 0",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            borderRadius: "1rem",
-            boxShadow: "0 0.125rem 1rem rgba(122,111,240,0.07)",
-            maxWidth: "68.75rem",
-            marginLeft: "auto",
-            marginRight: "auto",
-            padding: "5rem 0.625rem"
-          }}
-        >
-          <h2 style={{ fontSize: "5rem", fontWeight: 550, marginBottom: "1.5rem", color: "black" }}>
-            Why Choose Gemspay?
-          </h2>
-
-                    <p style={{ fontSize: "1.6rem", textAlign: "center", marginTop: "0.625rem", color: "black", lineHeight: 1.5, width: "70%", fontWeight: 100  }}>
-                      A user-friendly, fast, one-touch payment option. Robust, Clean, Developer-Friendly Payment Gateway built for Developers.
-                    </p>
-
- <div
-  style={{
-    display: "flex",
-    alignItems: "flex-start",
-    justifyContent: "flex-start",
-    gap: "3rem",
-    width: "100%",
-    margin: 0,
-    paddingLeft: 0,
-    marginLeft: "-10.3125rem",
-    marginTop: "5rem"
-  }}
->
+      <main style={{ position: "relative", overflow: "hidden", zIndex: 1, marginTop: "1.25rem", padding:0 }}>
   <div
+    className="hero-section"
     style={{
-      flex: 0.55,
-      minWidth: 10,
-      position: "relative",
       display: "flex",
-      flexDirection: "column",
-      alignItems: "flex-start"
+      alignItems: "center",
+      justifyContent: "space-between",
+      gap: "2rem",
+      minHeight: "30rem",
+      margin: "2rem 0",
+      flexWrap: "wrap",
+      marginLeft: "0.0625rem",
+      position: "relative", // contains absolutely positioned children
+      zIndex: 2,
     }}
   >
-    {/* Feature 1 */}
+    {/* Texts on the left */}
     <div
+      className="hero-text"
       style={{
-        display: "flex",
-        alignItems: "flex-start",
-        width: "100%",
-        marginBottom: "1rem" // Reduced spacing between features
+        flex: 1.2,
+        minWidth: 280,
+        textAlign: "left",
+        marginLeft: 0,
+        paddingLeft: 0,
+        marginBottom: 0,
+        position: "relative",
+        zIndex: 3, // Ensure text stays above image/svg
       }}
     >
-      <span
+      <a
+        href="#"
+        className="pencco-btn"
         style={{
+          background: "#8e82fe",
+          color: "white",
+          padding: "0.5px 5px",
+          borderRadius: "62.4375rem",
+          fontWeight: 550,
+          textDecoration: "none",
+          boxShadow: "0 0.125rem 0.5rem rgba(122,111,240,0.12)",
+          border: "none",
+          fontSize: "1rem",
+          transition: "background 0.2s",
+          cursor: "pointer",
+          display: "inline-flex",
+          alignItems: "center",
+          marginBottom: "1.5rem",
+          marginTop: "6.25rem",
+        }}
+      >
+        Pencco is now live
+        <span style={{ marginLeft: 10, display: "flex", alignItems: "center" }}>
+          <FaArrowRight size={17} />
+        </span>
+      </a>
+
+      <h1 style={{ margin: 0 }}>Gemspay!</h1>
+      <h1 style={{ margin: 0 }}>A New Way To</h1>
+      <h1 style={{ margin: 0 }}>Pay</h1>
+      <p>Developing various solutions that will seamlessly integrate with</p>
+      <p>the leading payment and switching platform providers in</p>
+      <p>Nigeria.</p>
+      <br />
+
+      <a
+        href="#"
+        className="start-btn"
+        style={{
+          background: "black",
+          color: "white",
+          padding: "0.9375rem 2.5rem",
+          borderRadius: "62.4375rem",
+          fontWeight: 550,
+          textDecoration: "none",
+          boxShadow: "0 0.125rem 0.5rem rgba(122,111,240,0.12)",
+          border: "none",
+          fontSize: "1.25rem",
+          transition: "background 0.2s",
+          cursor: "pointer",
           display: "inline-flex",
           alignItems: "center",
           justifyContent: "center",
-          width: 32, // Slightly smaller bullet
-          height: 32,
-          minWidth: 32,
-          minHeight: 32,
-          background: "white",
-          borderRadius: "6px",
-          marginTop: "2px",
-          position: "relative",
-          zIndex: 2,
-          border: "2px solid #222",
-          boxShadow: "0 2px 8px rgba(122,111,240,0.07)",
-          flexShrink: 0
         }}
       >
+        Get Started
         <span
           style={{
-            display: "block",
-            width: 12,
-            height: 12,
-            background: "rgba(231,84,128,0.45)", // Faded rose pink
+            marginLeft: 16,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            background: "#fff",
             borderRadius: "50%",
-            border: "1px solid #111" // Black border around circle
+            width: 38,
+            height: 38,
           }}
-        ></span>
-      </span>
-      <div style={{ marginLeft: "1.2rem", flex: 1 }}>
-        <div style={{ fontWeight: 630, fontSize: "1.6rem", marginBottom: 4 }}>
-          Seamless experience
-        </div>
-        <div style={{ color: "#444", fontSize: "1.06rem", fontWeight: 400, lineHeight: 1.5, marginTop: "1.25rem"}}>
-          Multiple options of payment gateways such as Wallet, Credit/Debit Cards, USSD, Bank Transfer.
-        </div>
-      </div>
+        >
+          <FaArrowRight size={22} color="#111" />
+        </span>
+      </a>
     </div>
-    {/* Slim, longer vertical line between bullets */}
+
+    {/* Image on the right - Desktop only */}
     <div
+      className="desk-top-hero-image"
       style={{
-        width: "0.5px",
-        height: "7.5rem", // Longer line
-        background: "#111",
-        margin: "0 0 1.5rem 0", // Match reduced spacing
-        marginLeft: "0.9375rem", // (32px bullet / 2) - (1px line / 2)
-         marginTop: "-4.375rem" // <-- Move line up to align with bullet center
+        flex: 1,
+        display: "flex",
+        justifyContent: "flex-end",
+        minWidth: 320,
+        paddingRight: 0,
+        position: "relative",
+        zIndex: 2,
+        paddingRight: 0,
+        marginRight: 0,
+      }}
+    >
+      <img
+        src={mainImage}
+        alt="Main Visual"
+        style={{
+          maxWidth: "100%",
+          height: "37rem",
+          borderRadius: "1.125rem",
+          boxShadow: "none",
+          position: "relative",
+          top: "-3.5rem",
+          marginRight: "0",
+          marginLeft: "auto",
+          display: "block"
+        }}
+      />
+    </div>
+    </div>
+
+    {/* Mobile SVG + Hero Image */}
+    <div className="mobile-svg-container">
+      <svg  viewBox="0 0 980 1800" className="mobile-svg">
+        <polygon
+          points="1200,0 1700,0 200,1600 1210,0"
+          fill="#FFD600"
+          opacity="0.16"
+        />
+        <polygon
+          points="8000,1000 10,10000 -10,1600 1800,300"
+          fill="#7c7bfb"
+          opacity="1"
+        />
+      </svg>
+
+      <img src={mainImage} alt="Mobile Hero" className="mobile-hero-image" />
+    </div>
+    
+   
+  
+
+  {/* CSS Styles */}
+  <style>
+    {`
+      .mobile-svg-container {
+        display: none;
+      }
+
+      @media (max-width: 768px) {
+        .hero-section {
+          flex-direction: column;
+          text-align: center;
+          margin: 1rem 0;
+        }
+
+        .hero-text {
+          margin-top: 1rem;
+          z-index: 3;
+        }
+
+        .start-btn {
+          width: 60%;
+          justify-content: center;
+        }
+
+        .mobile-svg-container {
+          display: block;
+          width: 100%;
+          text-align: center;
+          margin-top: 1rem;
+          position: relative;
+          z-index: 1;
+        }
+
+        .mobile-hero-image {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 75%;
+          max-width: 350px;
+          z-index: 2;
+        }
+
+        .mobile-svg {
+          width: 100%;
+          height: auto;
+          transform: scale(0.75);
+          transform-origin: top center;
+        }
+
+        .desk-top-hero-image {
+          display: none !important;
+        }
+          .desktop-svg {
+          display: none !important;}
+      }
+    `}
+  </style>
+
+
+
+        <section className="benefit-section"
+  style={{
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    background: "#FFFAF0",
+    padding: "2rem 1rem",
+    marginTop: "14rem",
+    zIndex: 2,
+    flexWrap: "wrap", // handles stacking on small screens
+  }}
+>
+  {/* Text section */}
+  <div
+    style={{
+      flex: "1 1 500px",
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "center",
+      gap: "1.5rem",
+      margin: "0 2rem",
+    }}
+  >
+    <h2 style={{ fontSize: "1.3rem", margin: 0, color: "#8e82fe" }}>
+      Growth enabler for businesses
+    </h2>
+    <p style={{ fontSize: "2.5rem", color: "#222", margin: 0, fontWeight: 600 }}>
+      An all-inclusive centralized
+    </p>
+    <p style={{ fontSize: "2.5rem", color: "#222", margin: 0, fontWeight: 600 }}>
+      payment platform
+    </p>
+    <p
+      style={{
+        fontSize: "1.1rem",
+        color: "#444",
+        lineHeight: 1.8,
+        marginTop: "30px",
+        fontWeight: 500,
+      }}
+    >
+      GemsPay is an all-inclusive centralized payment platform that enables clients increase efficiency in their payments processing by ways of receiving and making payments across diverse channels. The overarching goal is to become a growth enabler for business, allowing them to expand by delivering the essential strategies necessary for achieving exponential growth.
+    </p>
+
+    <a
+      href="#"
+      className="getstarted-btn"
+      style={{
+        background: "black",
+        color: "white",
+        padding: "1.25rem 2.5rem",
+        borderRadius: "62.4375rem",
+        fontWeight: 550,
+        textDecoration: "none",
+        boxShadow: "0 0.125rem 0.5rem rgba(122,111,240,0.12)",
+        fontSize: "0.9375rem",
+        display: "inline-flex",
+        alignItems: "center",
+        justifyContent: "center",
+        maxWidth: "10rem",
+        marginTop: "1px",
+      }}
+    >
+      Get Started
+    </a>
+  </div>
+
+  {/* Image section */}
+  <div
+    style={{
+      flex: "1 1 31.25rem",
+      background: "linear-gradient(to bottom right, #FFFAF0, #f0eefe)",
+      borderRadius: "0.75rem",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      margin: "2rem",
+      height: "42rem",
+    }}
+  >
+    <img
+      src={benefitImage}
+      alt="Benefit"
+      style={{
+        width: "100%",
+        height: "100%",
+        objectFit: "cover",
+        borderRadius: "0.75rem",
+        boxShadow: "none",
+        mixBlendMode: "multiply", // Blends image into background
       }}
     />
-    {/* Feature 2 */}
-    <div
-      style={{
-        display: "flex",
-        alignItems: "flex-start",
-        width: "100%",
-        marginBottom: "1.5rem"
-      }}
-    >
-      <span
-        style={{
-          display: "inline-flex",
-          alignItems: "center",
-          justifyContent: "center",
-          width: 32,
-          height: 32,
-          minWidth: 32,
-          minHeight: 32,
-          background: "white",
-          borderRadius: "6px",
-          marginTop: "2px",
-          position: "relative",
-          zIndex: 2,
-          border: "2px solid #222",
-          boxShadow: "0 2px 8px rgba(122,111,240,0.07)",
-          flexShrink: 0
-        }}
-      >
-        <span
-          style={{
-            display: "block",
-            width: 12,
-            height: 12,
-            background: "rgba(231,84,128,0.45)",
-            borderRadius: "50%",
-            border: "1px solid #111"
-          }}
-        ></span>
-      </span>
-      <div style={{ marginLeft: "1.2rem", flex: 1 }}>
-        <div style={{ fontWeight: 630, fontSize: "1.6rem", marginBottom: 4 }}>
-          Easy Customization
+  </div>
+</section>
+
+        {/* Why Choose Gemspay Section */}
+        <section 
+  style={{
+    background: "#fff",
+    color: "#222",
+    padding: "5px 0",
+    margin: "2.5rem 0",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    borderRadius: "1rem",
+    boxShadow: "none",
+    maxWidth: "60rem",
+    marginLeft: "auto",
+    marginRight: "auto",
+    padding: "1rem 1rem",
+    marginTop: "1.5rem"
+  }}
+>
+  <h2 className="section-heading" id="gemspay-heading"> 
+    Why Choose Gemspay?</h2>
+
+  <p className="section-subtext" id="gemspay-subtext">
+    A user-friendly, fast, one-touch payment option. Robust, Clean, Developer-Friendly Payment Gateway built for Developers.
+  </p>
+
+ <section style={{
+  width: "100%",
+  marginTop: "5rem",
+  marginLeft: "-10.3125rem",
+  padding: "1rem"
+}}>
+ <div
+  className="features-container"
+  style={{
+    display: "flex",
+    flexDirection: "row",
+    gap: "3rem",
+    flexWrap: "wrap",
+    marginLeft: "-2.5rem",
+    justifyContent: "center",   // ✅ Center horizontally
+    alignItems: "flex-start",   // ✅ Align items top-aligned
+    maxWidth: "1000px",         // ✅ Optional: constrain total width
+    margin: "-1rem auto",           // ✅ Center the whole section
+    padding: "0 1rem",          // ✅ Add horizontal breathing space
+  }}>
+    
+    {/* Feature List */}
+    <div style={{
+      flex: 1,
+      minWidth: "300px",
+      display: "flex",
+      flexDirection: "column"
+    }}>
+      {[
+        {
+          title: "Seamless experience",
+          desc: "Multiple options of payment gateways such as Wallet, Credit/Debit Cards, USSD, Bank Transfer.",
+          lineHeight: "7.5rem"
+        },
+        {
+          title: "Easy Customization",
+          desc: "Design to complement our customer in-house solutions through our various APIs.",
+          lineHeight: "5.625rem",
+        },
+        {
+          title: "Invoice Payments",
+          desc: "Faster, easier way to invoice. Immediate Refund Option.",
+          lineHeight: null
+        }
+      ].map((item, index) => (
+        <div key={index} style={{ display: "flex", alignItems: "flex-start", marginBottom: "2.5rem", position: "relative" }}>
+          
+          {/* Bullet and line */}
+          <div style={{ marginRight: "1.2rem", display: "flex", flexDirection: "column", alignItems: "center", position: "relative" }}>
+            <span style={{
+              display: "inline-flex",
+              alignItems: "center",
+              justifyContent: "center",
+              width: 32,
+              height: 32,
+              background: "white",
+              borderRadius: "6px",
+              border: "2px solid #222",
+              boxShadow: "0 2px 8px rgba(122,111,240,0.07)",
+              zIndex: 2,
+              position: "relative"
+            }}>
+              <span style={{
+                display: "block",
+                width: 12,
+                height: 12,
+                background: "rgba(231,84,128,0.45)",
+                borderRadius: "50%",
+                border: "1px solid #111"
+              }} />
+            </span>
+            {item.lineHeight && (
+              <div className="feature-line" style={{
+                width: "1px",
+                height: item.lineHeight,
+                background: "#111",
+                marginTop: "-0.5rem"
+              }} />
+            )}
+          </div>
+
+          {/* Title and description */}
+          <div style={{ flex: 1 }}>
+            <div style={{ fontWeight: 630, fontSize: "1.6rem", marginBottom: 4 }}>
+              {item.title}
+            </div>
+            <div className="feature-description" style={{
+              color: "#444",
+              fontSize: "1.06rem",
+              lineHeight: 1.5,
+              marginTop: "1.25rem"
+            }}>
+              {item.desc}
+            </div>
+          </div>
         </div>
-        <div style={{ color: "#444", fontSize: "1.06rem", fontWeight: 400, lineHeight: 1.5, marginTop: "1.25rem" }}>
-          Design to complement our customer in-house solutions through our various APIs.
-        </div>
-      </div>
+      ))}
     </div>
-    {/* Slim, longer vertical line between bullets */}
-    <div
-      style={{
-        width: "0.5px",
-        height: "5.625rem", // Longer line
-        background: "#111",
-        margin: "0 0 1.5rem 0", // Match reduced spacing
-        marginLeft: "0.9375rem", // (32px bullet / 2) - (1px line / 2)
-        marginTop: "-5rem" // <-- Move line up to align with bullet center
-      }}
-    />
-    {/* Feature 3 */}
-    <div
-      style={{
-        display: "flex",
-        alignItems: "flex-start",
-        width: "100%"
-      }}
-    >
-      <span
+
+    {/* Feature Images */}
+    <div className="features-images" style={{
+      flex: 1,
+      minWidth: "100px",
+      display: "flex",
+      justifyContent: "flex-start",
+      alignItems: "flex-start",
+      position: "relative",
+      height: "32rem",
+      marginTop: "-1rem",
+      marginLeft: "-3rem",  
+    }}>
+      <img
+        src={feature1}
+        alt="Feature 1"
+        className="feature-img feature-img1"
         style={{
-          display: "inline-flex",
-          alignItems: "center",
-          justifyContent: "center",
-          width: 32,
-          height: 32,
-          minWidth: 32,
-          minHeight: 32,
-          background: "white",
-          borderRadius: "6px",
-          marginTop: "2px",
-          position: "relative",
-          zIndex: 2,
-          border: "2px solid #222",
-          boxShadow: "0 2px 8px rgba(122,111,240,0.07)",
-          flexShrink: 0
+          height: "100%",
+          width: "auto",
+          borderRadius: "1rem",
+          boxShadow: "0 0.25rem 1.25rem rgba(122,111,240,0.10)",
+          position: "absolute",
+          left: "1rem",
+          top: 0,
+          zIndex: 1
         }}
-      >
-        <span
-          style={{
-            display: "block",
-            width: 12,
-            height: 12,
-            background: "rgba(231,84,128,0.45)",
-            borderRadius: "50%",
-            border: "1px solid #111"
-          }}
-        ></span>
-      </span>
-      <div style={{ marginLeft: "1.2rem", flex: 1 }}>
-        <div style={{ fontWeight: 630, fontSize: "1.6rem", marginBottom: 4 }}>
-          Invoice Payments
-        </div>
-        <div style={{ color: "#444", fontSize: "1.07rem", fontWeight: 400, lineHeight: 1.5, marginTop: "1.25rem" }}>
-          Faster, easier way to invoice. Immediate Refund Option.
-        </div>
-      </div>
+      />
+      <img
+        src={feature2}
+        alt="Feature 2"
+        className="feature-img feature-img2"
+        style={{
+          height: "100%",
+          width: "auto",
+          borderRadius: "1rem",
+          boxShadow: "0 0.25rem 1.25rem rgba(122,111,240,0.10)",
+          position: "absolute",
+          left: "20rem",
+          top: "2rem",
+          zIndex: 2
+        }}
+      />
     </div>
   </div>
 
-{/* Picture on the right (unchanged) */}
-<div
-  style={{
-    flex: 1,
-    minWidth: 260,
-    display: "flex",
-    alignItems: "flex-start",
-    justifyContent: "center",
-    position: "relative", // Needed for absolute positioning of overlapping images
-    height: "16.25rem", // Adjust height as needed
-     marginLeft: "-1.875rem"
-  }}
->
-  {/* First image (taller, behind) */}
-  <img
-    src={feature1}
-    alt="Feature 1"
-    style={{
-      height: "31.25rem", // Slightly taller
-      width: "auto",
-      borderRadius: "1rem",
-      boxShadow: "0 0.25rem 1.25rem rgba(122,111,240,0.10)",
-      position: "absolute",
-      left: "1.875rem",
-      top: "0.5px",
-      zIndex: 1
-    }}
-  />
-  {/* Second image (shorter, in front, overlapping) */}
-  <img
-    src={feature2}
-    alt="Feature 2"
-    style={{
-      height: "31.25rem", // Slightly shorter
-      width: "auto",
-      borderRadius: "1rem",
-      boxShadow: "0 0.25rem 1.25rem rgba(122,111,240,0.10)",
-      position: "absolute",
-      left: "20rem", // Overlap to the right
-      top: "3.125rem",
-      zIndex: 2
-    }}
-  />
-</div>
-</div>
+  {/* Styles */}
+  <style>
+    {`
+@media (max-width: 768px) {
+  /* Container layout */
+  .features-container {
+    flex-direction: column !important;
+    padding: 0 1rem;
+    align-items: flex-start !important;
+    text-align: flex-start !important;
+  }
+
+  /* Section heading */
+  .section-heading {
+    font-size: 3rem !important;
+    font-weight: 700 !important;
+    text-align: center !important;
+    margin-bottom: 2rem !important;
+  }
+
+  /* Feature bullets + text container */
+  .features-container > div:first-child {
+    width: 101%;
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    align-items: flex-start;
+  }
+
+  .features-container .feature-description {
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+    margin-top: 0.5rem !important;
+    color: #444;
+    text-align: flex-start;
+    gap: 1rem;
+  }
+
+  /* Bullet container */
+  .features-container span {
+    width: 28px !important;
+    height: 28px !important;
+    background: white !important;
+    border: 2px solid #222 !important;
+    border-radius: 6px !important;
+    box-shadow: 0 2px 8px rgba(122, 111, 240, 0.07);
+    z-index: 3 !important;
+    position: relative !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4rem !important
+  }
+
+  /* Inner bullet dot */
+  .features-container span > span {
+    width: 10px !important;
+    height: 10px !important;
+    background: rgba(231, 84, 128, 0.45) !important;
+    border: 1px solid #111 !important;
+    border-radius: 50% !important;
+    margin-left: -0.1rem !important;
+  }
+
+  /* Vertical lines under bullets */
+  .features-container .feature-line {
+    width: 1px !important;
+    background: #111 !important;
+    margin-top: -10px !important;
+    margin-bottom: 1rem !important;
+    align-self: center !important;
+    margin-left: 4rem !important;
+  }
+
+  /* Bullet + text side-by-side */
+  .features-container .feature-item {
+    display: flex !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+    text-align: left !important;
+    gap: 1rem !important;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  /* Title inside item */
+  .feature-item-title {
+    font-size: 1.2rem !important;
+    font-weight: 600 !important;
+    margin-bottom: 0.3rem;
+  }
+
+  /* Images below text */
+  .features-images {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 1.5rem !important;
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+    position: static !important;
+    margin-left: 1rem !important
+  }
+
+  .feature-img {
+    position: static !important;
+    width: 100% !important;
+    max-width: 80% !important;
+    height: auto !important;
+    border-radius: 1rem !important;
+    background: transparent !important;
+    box-shadow: 0 0.25rem 1.25rem rgba(122, 111, 240, 0.1) !important;
+    transition: transform 0.5s ease !important;
+  }
+
+  .feature-img:hover {
+    transform: scale(1.05) rotate(0.3deg);
+  }
+}
+
+/* Hover effect for desktop */
+@media (min-width: 769px) {
+  .feature-img {
+    transition: transform 0.5s ease;
+  }
+
+  .feature-img:hover {
+    transform: scale(1.05) rotate(0.3deg);
+  }
+
+    .section-heading {
+    font-size: 1.6rem !important;
+    font-weight: 700 !important;
+    text-align: center !important;
+    margin-bottom: 2rem !important;
+  }
+
+}
+
+
+    `}
+  </style>
+</section>
+
+
 
 <section
   style={{
     background: "#fff",
-    padding: "5rem 10vw 0.625rem 10vw",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
     borderRadius: 0,
     width: "100vw", // Corrected property
     margin: 0,
-    marginTop: "4.375rem",
+    marginTop: "12rem",
     boxSizing: "border-box",
     position: "relative",
   
   }}
 >
- <h2
+ <h2 className="growth-heading"
   style={{
-    fontSize: "4.24rem",
+    fontSize: "5rem",
     fontWeight: 710,
     marginBottom: "1.5rem",
     color: "black",
@@ -578,7 +726,7 @@ function Home() {
     display: "inline-block"
   }}
 >
-  The <span style={{ position: "relative", display: "inline-block" }}>
+  The <span style={{ position: "relative", display: "inline-block", }}>
     Growth
     <div
       style={{
@@ -595,9 +743,9 @@ function Home() {
     />
   </span> enabler for business
 </h2>
-  <p
+  <p className="growth-paragraph"
     style={{
-   fontSize: "1.7rem", textAlign: "center", marginTop: "0.625rem", color: "black", lineHeight: 1.5, width: "70%", fontWeight: 200
+   fontSize: "3rem", textAlign: "center", marginTop: "0.625rem", color: "black", lineHeight: 1.5, width: "70%", fontWeight: 200
     }}
   >
     We empower businesses to expand by delivering the essential strategies necessary for achieving exponential growth.
@@ -609,8 +757,7 @@ function Home() {
       src={growth}
       alt="Growth"
       style={{
-        width: "100vw",
-        maxWidth: "100vw",
+        width: "100%",
         height: "auto",
         borderRadius: 0,
         background: "transparent",
@@ -618,33 +765,59 @@ function Home() {
       }}
     />
   </div>
+
+  <style>
+    @media (max-width: 768px) {`
+  section {
+    padding: 3rem 5vw 1rem 5vw !important;
+    text-align: center !important;
+  }
+
+  section h2 {
+    font-size: 2.2rem !important;
+    line-height: 1.3 !important;
+    margin-bottom: 1rem !important;
+  }
+
+  section p {
+    font-size: 1.2rem !important;
+    width: 100% !important;
+    line-height: 1.6 !important;
+    margin-top: 0.5rem !important;
+  }
+
+  section img {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-top: 2rem !important;
+    border-radius: 0 !important;
+  }
+`}
+
+  </style>
 </section>
 
 <section
+  className="fraud-section"
   style={{
     display: "flex",
-    alignItems: "flex-start",
-    justifyContent: "center",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    padding: "5rem 10vw",
     gap: "3rem",
     width: "100vw",
-    background: "#fff",
-    borderRadius: "1rem",
-    boxShadow: "0 0.125rem 1rem rgba(122,111,240,0.07)",
-    margin: "2.5rem 0",
-    padding: "5rem 10vw",
     boxSizing: "border-box",
-   
+    background: "#fff",
+    flexWrap: "nowrap"
   }}
 >
-  {/* Left: Fraud Image */}
+  {/* Image on the Left */}
   <div
     style={{
-      flex: 1.5,
-      minWidth: 320,
+      flex: 1,
       display: "flex",
-      alignItems: "center",
-      justifyContent: "flex-start",
-      marginLeft: "-7.5rem",
+      justifyContent: "flex-start"
     }}
   >
     <img
@@ -652,47 +825,100 @@ function Home() {
       alt="Fraud Screening"
       style={{
         width: "100%",
-        maxWidth: "50rem",
-        height: "38.125rem",
+        maxWidth: "700px", // Increased
+        height: "auto",
         borderRadius: "1rem",
-        boxShadow: "0 0.25rem 1.5rem rgba(122,111,240,0.10)",
+        boxShadow: "0 0.25rem 1.5rem rgba(122,111,240,0.1)",
         background: "transparent",
-        display: "block",
+        display: "block"
       }}
     />
   </div>
 
-  {/* Right: Text Content */}
+  {/* Text on the Right */}
   <div
     style={{
-      flex: 2,
-      minWidth: 320,
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "flex-start",
-      gap: "2.5rem",
-      paddingLeft: "5vw",
-      marginBottom: "0",
-      marginTop: "-2.5rem"
+      flex: 1,
+      paddingLeft: "2rem"
     }}
   >
-    <div>
-      <h2 style={{ fontSize: "3.5rem", color: "black", margin: 0, fontWeight: 800, }}>
-        Fraud screening features to help our merchants
-      </h2>
-      <p style={{ fontSize: "1.18rem", color: "#444", marginTop: "1.125rem", marginBottom: 0, lineHeight: 1.7,width: "100%" }}>
-        We provide fraud screening features to alert merchants on any fraudulent representation of our Customers Cards (Debit/Credit) and prevent it for about 80 to 90%.
-      </p>
-    </div>
-    <div>
-      <h3 style={{ fontSize: "3rem", color: "black", margin: 0, fontWeight: 800, width: "100%" }}>
-        Multi-Factor authentication of transaction.
-      </h3>
-      <p style={{ fontSize: "1.2rem", color: "#444", marginTop: "0.75rem", marginBottom: 0, lineHeight: 1.7 }}>
-       Trust worthy Service to customers. Secure flow of transaction details among buyers, sellers and financial institutions.
-      </p>
-    </div>
+    <h3
+      style={{
+        fontSize: "3rem", // Bigger heading
+        fontWeight: 800,
+        marginBottom: "1rem",
+        color: "#000"
+      }}
+    >
+      Fraud screening features to help our merchants
+    </h3>
+    <p
+      style={{
+        fontSize: "0.95rem", // Smaller paragraph
+        color: "#444",
+        lineHeight: 1.7
+      }}
+    >
+      We provide fraud screening features to alert merchants on any fraudulent
+      representation of our Customers Cards (Debit/Credit) and prevent it for
+      about 80 to 90%.
+    </p>
+
+    <h3
+      style={{
+        fontSize: "3rem", // Bigger sub-heading
+        fontWeight: 700,
+        marginTop: "2rem",
+        marginBottom: "0.5rem",
+        color: "#000"
+      }}
+    >
+      Multi-Factor authentication of transaction.
+    </h3>
+    <p
+      style={{
+        fontSize: "0.95rem", // Smaller paragraph
+        color: "#444",
+        lineHeight: 1.7
+      }}
+    >
+      Trustworthy service to customers. Secure flow of transaction details among
+      buyers, sellers, and financial institutions.
+    </p>
   </div>
+
+  <style>
+    {`
+      @media (max-width: 768px) {
+        .fraud-section {
+          flex-direction: column !important;
+          padding: 2rem 1rem !important;
+          text-align: center !important;
+        }
+
+        .fraud-section > div {
+          padding: 0 !important;
+        }
+
+        .fraud-section h2 {
+          font-size: 2rem !important;
+        }
+
+        .fraud-section h3 {
+          font-size: 1.5rem !important;
+        }
+
+        .fraud-section p {
+          font-size: 1rem !important;
+        }
+
+        .fraud-section img {
+          max-width: 100% !important;
+          height: auto !important;
+        }
+      }
+    `}
+  </style>
 </section>
 
   <section
@@ -704,15 +930,15 @@ function Home() {
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
-    padding: "5rem 0",
+    
     margin: "0",
     boxSizing: "border-box",
     boxShadow: "none"
   }}
 >
-  <h2
+  <h1
     style={{
-      fontSize: "4.8rem",
+      fontSize: "5rem",
       fontWeight: 800,
       color: "#222",
       textAlign: "center",
@@ -723,14 +949,14 @@ function Home() {
     }}
   >
     Experience easy payment processing
-  </h2>
+  </h1>
   <p
     style={{
-      fontSize: "1.7rem",
+      fontSize: "2rem",
       color: "#444",
       textAlign: "center",
       margin: "2rem 0 0 0",
-      fontWeight: 400,
+      fontWeight: 450,
       width: "100%",
       lineHeight: 3
     }}
@@ -767,7 +993,7 @@ function Home() {
 
 
 {/* Overlay background section */}
-<div
+<div className="overlay-bg"
   style={{
     width: "100vw",
     minHeight: "10vh",
@@ -844,7 +1070,7 @@ function Home() {
         justifyContent: "center",
         paddingLeft: "2vw"
       }}>
-        <h2 style={{
+        <h1 style={{
           fontSize: "4.5rem",
           color: "#222",
           margin: 0,
@@ -853,9 +1079,9 @@ function Home() {
           lineHeight: 1
         }}>
           Receive and make payments easily
-        </h2>
+        </h1>
         <p style={{
-          fontSize: "1.5rem",
+          fontSize: "2rem",
           color: "#444",
           marginTop: "1.75rem",
           marginBottom: 0,
@@ -916,7 +1142,20 @@ function Home() {
         display: "block",
       }}
     />
-       
+      <style>
+  {`
+    @media (max-width: 768px) {
+      .overlay-bg {
+        display: none !important;
+      }
+
+      .receive-image-wrapper {
+        display: none !important;
+      }
+    }
+  `}
+</style>
+ 
       </div>
     </section>
 
@@ -927,7 +1166,7 @@ function Home() {
         </section>
       </main>
 
- <div style={{ backgroundColor: 'white', padding: '2.5rem 1.25rem' }}>
+ <div className="prefooter-container" style={{ backgroundColor: 'white', padding: '2.5rem 1.25rem' }}>
   {/* Top: Logo + Newsletter */}
   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', marginBottom: '2.5rem' }}>
     {/* Logo */}
@@ -961,7 +1200,7 @@ function Home() {
         style={{
           backgroundColor: '#000',
           color: '#fff',
-          padding: '1.25rem1.875rem',
+          padding: '1.5rem 1.875rem',
           fontSize: '0.9375rem',
           border: 'none',
           borderRadius: '3.125rem',
@@ -1082,6 +1321,47 @@ function Home() {
 </div>
 
     </div>
+    <style>
+  {`
+    @media (max-width: 768px) {
+      .prefooter-container {
+        padding: 2rem 1rem !important;
+      }
+
+      .prefooter-top,
+      .prefooter-bottom {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 2rem;
+      }
+
+      .newsletter-wrapper {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        width: 100% !important;
+      }
+
+      .newsletter-wrapper input {
+        width: 100% !important;
+      }
+
+      .newsletter-wrapper button {
+        width: 100% !important;
+        margin-top: 1rem;
+      }
+
+      .prefooter-column {
+        width: 100% !important;
+      }
+
+      .stay-connected {
+        justify-content: flex-start !important;
+        margin-left: 0 !important;
+      }
+    }
+  `}
+</style>
+
   </div>
 
   <footer style={{ backgroundColor: '#fff', padding: '1.25rem 0', textAlign: 'center' }}>

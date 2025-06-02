@@ -7,7 +7,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+
   },
   "keywords": [
     "react",
@@ -24,10 +27,10 @@
     "react-icons": "^5.5.0",
     "react-scripts": "^5.0.1"
   },
-  "homepage": "https://yourhomepage.com",
+  "homepage": "https://bishopkbb.github.io/gemspay-clone",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/gemspaysolution-clone.git"
+    "url": "https://github.com/bishopkbb/gemspaysolution-clone.git"
   },
   "browserslist": {
     "production": [

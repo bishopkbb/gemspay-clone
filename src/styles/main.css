@@ -115,17 +115,146 @@ main .start-btn {
         opacity: 0.5;
 }
 
-@media only screen and (max-width: 768px) {
-  .header {
-    padding: 0.625rem;
-    font-size: 1rem;
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
   }
-  .main-content {
-    padding: 1.25rem;
-    font-size: 0.875rem;
+
+  .nav-links {
+    display: none;
   }
-  .footer {
-    padding: 0.625rem;
-    font-size: 0.75rem;
+
+  .hamburger {
+    display: block;
   }
+}
+
+@media (max-width: 768px) {
+  .desktop-hero-image {
+    display: none;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .desk-top-hero-image {
+    display: none !important;
+  }
+
+  .mobile-svg-container {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-top: -2rem !important;
+    z-index: 1;
+  }
+
+ .mobile-svg {
+  width: 100%;
+  height: auto;
+  transform: scale(0.5) !important; /* Shrinks both width and height */
+  transform-origin: top center;
+}
+
+
+  .mobile-hero-image {
+    position: absolute;
+    top: 30% !important;
+    left: 55% !important;
+    transform: translate(-50%, -50%);
+    width: 80% !important;
+    max-width: 350px;
+    z-index: 2;
+  }
+}
+
+/* Hide mobile SVG container on desktop */
+@media (min-width: 769px) {
+  .mobile-svg-container {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    flex-direction: column !important;
+    padding: 2rem 1rem !important;
+  }
+
+  section > div {
+    margin: 1rem 0 !important;
+  }
+
+  .getstarted-btn {
+    align-self: flex-start;
+  }
+    .benefit-section {
+    margin-top: -40rem !important; /* Adjust as needed */
+    padding-top: 1rem;
+  }
+}
+
+#gemspay-heading {
+  font-size: 4.1rem !important;
+  font-weight: 600;
+  color: black;
+  text-align: center;
+  width: 80% !important;
+  margin-bottom: 1rem !important;
+  margin-top: 0.5rem !important;
+}
+
+#gemspay-subtext {
+  font-size: 1.6rem !important;
+  line-height: 1.6;
+  color: black;
+  text-align: center;
+  width: 80% !important;
+  margin: 0 auto;
+  font-weight: 300;
+  margin-top: -1rem !important;
+}
+
+.growth-heading {
+  font-size: 4.2rem !important;
+  line-height: 1.6;
+  color: black;
+  text-align: center;
+  width: 100% !important;
+  margin: 0 auto;
+  font-weight: 300;
+  margin-top: -1rem !important;
+}
+
+.growth-paragraph {
+  font-size: 1.6rem !important;
+  line-height: 1.6;
+  color: black;
+  text-align: center;
+  width: 60% !important;
+  margin: 0 auto;
+  font-weight: 350 !important;
+  margin-top: -1rem !important;
+}
+
+.fraud-heading {
+  font-size: 5rem !important;
+  line-height: 1.6;
+  color: black;
+  text-align: flex-start !important;
+  width: 70% !important;
+  margin: 0 auto;
+  font-weight: 800;
+  margin-top: -1rem !important;
+}
+
+.fraud-paragraph {
+  font-size: 1.8rem !important;
+  line-height: 1.6;
+  color: black;
+  text-align: flex-start !important;
+  width: 60% !important;
+  margin: 0 auto;
+  font-weight: 350 !important;
+  margin-top: -1rem !important;
 }
