@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/gemspay-clone/static/css/main.879f469f.css",
-    "main.js": "/gemspay-clone/static/js/main.cb849e1d.js",
+    "main.css": "/gemspay-clone/static/css/main.2456e1ff.css",
+    "main.js": "/gemspay-clone/static/js/main.e2818976.js",
     "static/media/benefit.png": "/gemspay-clone/static/media/benefit.ec33b73c2d9ac0b66e03.png",
     "static/media/background.png": "/gemspay-clone/static/media/background.83a55ea9df4e923f1530.png",
     "static/media/feature1.png": "/gemspay-clone/static/media/feature1.df3b9d3e017592c6c746.png",
@@ -11,7 +11,7 @@
     "static/media/growth.png": "/gemspay-clone/static/media/growth.a082b11a3fefe0c13123.png",
     "static/media/fa-brands-400.ttf": "/gemspay-clone/static/media/fa-brands-400.1815e00441357e01619e.ttf",
     "static/media/fa-solid-900.woff2": "/gemspay-clone/static/media/fa-solid-900.2463b90d9a316e4e5294.woff2",
-    "static/media/hero.png": "/gemspay-clone/static/media/hero.44ec98192ebbce0085fd.png",
+    "static/media/hero.png": "/gemspay-clone/static/media/hero.df701d9abe2f623aaeff.png",
     "static/media/fraud.png": "/gemspay-clone/static/media/fraud.da444cdc5798b3f6ba7f.png",
     "static/media/fa-brands-400.woff2": "/gemspay-clone/static/media/fa-brands-400.c210719e60948b211a12.woff2",
     "static/media/fa-regular-400.ttf": "/gemspay-clone/static/media/fa-regular-400.914997e1bdfc990d0897.ttf",
@@ -19,11 +19,11 @@
     "static/media/fa-v4compatibility.ttf": "/gemspay-clone/static/media/fa-v4compatibility.da94ef451f4969af06e6.ttf",
     "static/media/fa-v4compatibility.woff2": "/gemspay-clone/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/gemspay-clone/index.html",
-    "main.879f469f.css.map": "/gemspay-clone/static/css/main.879f469f.css.map",
-    "main.cb849e1d.js.map": "/gemspay-clone/static/js/main.cb849e1d.js.map"
+    "main.2456e1ff.css.map": "/gemspay-clone/static/css/main.2456e1ff.css.map",
+    "main.e2818976.js.map": "/gemspay-clone/static/js/main.e2818976.js.map"
   },
   "entrypoints": [
-    "static/css/main.879f469f.css",
-    "static/js/main.cb849e1d.js"
+    "static/css/main.2456e1ff.css",
+    "static/js/main.e2818976.js"
   ]
 }
