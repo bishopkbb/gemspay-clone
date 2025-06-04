@@ -8,7 +8,7 @@ function Header() {
   const navItems = ["Home", "About", "Demo", "Products", "Pricing", "Faqs", "Contact"];
 
   return (
-    <header style={{ padding: "0.625rem 1.25rem", borderBottom: "1px solid #eee", position: "relative", zIndex: 1 }}>
+    <header style={{ padding: "0.625rem 1.25rem", position: "relative", zIndex: 1 }}>
       <div
         style={{
           display: "flex",

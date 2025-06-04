@@ -19,35 +19,39 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 function Home() {
   return (
     <>
-      {/* SVG background behind header and main */}
-      <svg
-        viewBox="0 0 980 1800"
-        className="desktop-svg"
-        style={{
-          position: "absolute",
-          top: 0,
-          right: 0,
-          zIndex: -1,
-          width: "75vw",
-          height: "100vh",
-          minWidth: 400,
-          minHeight: 1150,
-          pointerEvents: "none",
-        }}
-      >
-        {/* Thin yellow top, ending around the paragraph */}
-        <polygon
-          points="1200,0 1700,0 200,1600 1210,0"
-          fill="#FFD600"
-          opacity="0.16"
-        />
-        {/* Purple base runs from header to benefit section */}
-        <polygon
-          points="8000,1000 10,10000 -10,1600 1800,300"
-          fill="#7c7bfb"
-          opacity="1000"
-        />
-      </svg>
+     {/* SVG background behind header and hero section */}
+<svg
+  viewBox="0 0 1400 1210"
+  preserveAspectRatio="xMidYMid slice"
+  className="hero-background-svg"
+  style={{
+    position: "absolute",
+    top: 0,
+    right: 0,
+    zIndex: -1,
+    width: "65vw",
+    height: "175vh", // increase height to accommodate deeper purple
+    pointerEvents: "none",
+  }}
+>
+  {/* Yellow curve - thinner and flows on top */}
+  <path
+    d="M1200,-70 C1210,0 600,800 400,880 L1440,724 Z"
+    fill="#FFD600"
+    opacity="0.18"
+  />
+
+  {/* Purple base - now drops lower with square base */}
+  <path
+    d="M40,1000 C400,900 1000,500 1500,600 L1440,1400 L0,1400 Z"
+    fill="#7c7bfb"
+    opacity="1"
+  />
+</svg>
+
+
+
+
 
       {/* Header with log in button */}
       <header style={{ position: "relative", zIndex: 2, padding: "2rem 0 1rem 0" }}>
@@ -71,221 +75,113 @@ function Home() {
         </a>
       </header>
 
-      <main style={{ position: "relative", overflow: "hidden", zIndex: 1, marginTop: "1.25rem", padding:0 }}>
-  <div
-    className="hero-section"
-    style={{
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "space-between",
-      gap: "2rem",
-      minHeight: "30rem",
-      margin: "2rem 0",
-      flexWrap: "wrap",
-      marginLeft: "0.0625rem",
-      position: "relative", // contains absolutely positioned children
-      zIndex: 2,
-    }}
-  >
-    {/* Texts on the left */}
-    <div
-      className="hero-text"
-      style={{
-        flex: 1.2,
-        minWidth: 280,
-        textAlign: "left",
-        marginLeft: 0,
-        paddingLeft: 0,
-        marginBottom: 0,
-        position: "relative",
-        zIndex: 3, // Ensure text stays above image/svg
-      }}
-    >
-      <a
-        href="#"
-        className="pencco-btn"
-        style={{
-          background: "#8e82fe",
-          color: "white",
-          padding: "0.5px 5px",
-          borderRadius: "62.4375rem",
-          fontWeight: 550,
-          textDecoration: "none",
-          boxShadow: "0 0.125rem 0.5rem rgba(122,111,240,0.12)",
-          border: "none",
-          fontSize: "1rem",
-          transition: "background 0.2s",
-          cursor: "pointer",
-          display: "inline-flex",
-          alignItems: "center",
-          marginBottom: "1.5rem",
-          marginTop: "6.25rem",
-        }}
-      >
-        Pencco is now live
-        <span style={{ marginLeft: 10, display: "flex", alignItems: "center" }}>
-          <FaArrowRight size={17} />
-        </span>
-      </a>
+      <main style={{ position: "relative", overflowX: "hidden", zIndex: 1, marginTop: "1.25rem", padding: 0 }}>
 
-      <h1 style={{ margin: 0 }}>Gemspay!</h1>
-      <h1 style={{ margin: 0 }}>A New Way To</h1>
-      <h1 style={{ margin: 0 }}>Pay</h1>
+  {/* Hero Section */}
+  <div className="hero-section" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "2rem", minHeight: "30rem", margin: "2rem 0", flexWrap: "wrap", marginLeft: "1.3rem",marginTop:"1rem", position: "relative", zIndex: 2 }}>
+    {/* Left Text Block */}
+    <div className="hero-text" style={{ flex: 1.2, minWidth: 280, textAlign: "left", paddingLeft: 0, position: "relative", zIndex: 3 }}>
+      <h1 style={{ fontSize: "4.9rem", fontWeight: 700, lineHeight: 1.2, margin: 0,  }}>Gemspay!<br />A New Way To Pay</h1>
       <p>Developing various solutions that will seamlessly integrate with</p>
       <p>the leading payment and switching platform providers in</p>
       <p>Nigeria.</p>
       <br />
-
-      <a
-        href="#"
-        className="start-btn"
-        style={{
-          background: "black",
-          color: "white",
-          padding: "0.9375rem 2.5rem",
-          borderRadius: "62.4375rem",
-          fontWeight: 550,
-          textDecoration: "none",
-          boxShadow: "0 0.125rem 0.5rem rgba(122,111,240,0.12)",
-          border: "none",
-          fontSize: "1.25rem",
-          transition: "background 0.2s",
-          cursor: "pointer",
-          display: "inline-flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
+      <a href="#" className="start-btn" style={{ background: "black", color: "white", padding: "0.9375rem 2.5rem", borderRadius: "62.4375rem", fontWeight: 550, textDecoration: "none", boxShadow: "0 0.125rem 0.5rem rgba(122,111,240,0.12)", border: "none", fontSize: "1.25rem", transition: "background 0.2s", cursor: "pointer", display: "inline-flex", alignItems: "center", justifyContent: "center", marginTop: "1.5rem" }}>
         Get Started
-        <span
-          style={{
-            marginLeft: 16,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            background: "#fff",
-            borderRadius: "50%",
-            width: 38,
-            height: 38,
-          }}
-        >
+        <span style={{ marginLeft: 16, display: "flex", alignItems: "center", justifyContent: "center", background: "#fff", borderRadius: "50%", width: 38, height: 38 }}>
           <FaArrowRight size={22} color="#111" />
         </span>
       </a>
     </div>
 
-    {/* Image on the right - Desktop only */}
-    <div
-      className="desk-top-hero-image"
-      style={{
-        flex: 1,
-        display: "flex",
-        justifyContent: "flex-end",
-        minWidth: 320,
-        paddingRight: 0,
-        position: "relative",
-        zIndex: 2,
-        paddingRight: 0,
-        marginRight: 0,
-      }}
-    >
-      <img
-        src={mainImage}
-        alt="Main Visual"
-        style={{
-          maxWidth: "100%",
-          height: "37rem",
-          borderRadius: "1.125rem",
-          boxShadow: "none",
-          position: "relative",
-          top: "-3.5rem",
-          marginRight: "0",
-          marginLeft: "auto",
-          display: "block"
-        }}
-      />
+    {/* Right Image - Desktop only */}
+    <div className="desk-top-hero-image" style={{ flex: 1, display: "flex", justifyContent: "flex-end", minWidth: 320, position: "relative", zIndex: 2 }}>
+      <img src={mainImage} alt="Main Visual" claasName="hero-image" style={{ maxWidth: "100%", height: "auto", maxHeight: "500px", borderRadius: "1.125rem", position: "relative", top: "-1.8rem", marginLeft: "auto", display: "block" }} />
     </div>
-    </div>
+  </div>
 
-    {/* Mobile SVG + Hero Image */}
-    <div className="mobile-svg-container">
-      <svg  viewBox="0 0 980 1800" className="mobile-svg">
-        <polygon
-          points="1200,0 1700,0 200,1600 1210,0"
-          fill="#FFD600"
-          opacity="0.16"
-        />
-        <polygon
-          points="8000,1000 10,10000 -10,1600 1800,300"
-          fill="#7c7bfb"
-          opacity="1"
-        />
-      </svg>
+  {/* Mobile Image Layer */}
+  <div className="mobile-svg-container">
+    <svg viewBox="0 0 980 1800" className="mobile-svg">
+      <polygon points="1200,0 1700,0 200,1600 1210,0" fill="#FFD600" opacity="0.16" />
+      <polygon points="8000,1000 10,10000 -10,1600 1800,300" fill="#7c7bfb" opacity="1" />
+    </svg>
+    <img src={mainImage} alt="Mobile Hero" className="mobile-hero-image" />
+  </div>
 
-      <img src={mainImage} alt="Mobile Hero" className="mobile-hero-image" />
-    </div>
-    
-   
-  
+  <style>{`
+    @media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 1rem 0 2rem 0;
+    padding: 0 1rem;
+  }
 
-  {/* CSS Styles */}
-  <style>
-    {`
-      .mobile-svg-container {
-        display: none;
-      }
+  .hero-text {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0;
+    text-align: center;
+    z-index: 3;
+  }
 
-      @media (max-width: 768px) {
-        .hero-section {
-          flex-direction: column;
-          text-align: center;
-          margin: 1rem 0;
-        }
+  .hero-text h1 {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
 
-        .hero-text {
-          margin-top: 1rem;
-          z-index: 3;
-        }
+  .hero-text p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
 
-        .start-btn {
-          width: 60%;
-          justify-content: center;
-        }
+  .start-btn {
+    width: 100%;
+    max-width: 320px;
+    font-size: 1rem;
+    justify-content: center;
+    margin: 1.5rem auto 0 auto;
+  }
 
-        .mobile-svg-container {
-          display: block;
-          width: 100%;
-          text-align: center;
-          margin-top: 1rem;
-          position: relative;
-          z-index: 1;
-        }
+  /* Stack image and SVG after text */
+  .desk-top-hero-image {
+    display: block;
+    width: 100%;
+    position: relative;
+    margin-top: 2rem;
+    z-index: 2;
+    text-align: center;
+  }
 
-        .mobile-hero-image {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          width: 75%;
-          max-width: 350px;
-          z-index: 2;
-        }
+  .hero-image {
+    width: 75%;
+    max-width: 350px;
+    height: auto;
+    display: inline-block;
+    border-radius: 1rem;
+    position: relative;
+    z-index: 2;
+  }
 
-        .mobile-svg {
-          width: 100%;
-          height: auto;
-          transform: scale(0.75);
-          transform-origin: top center;
-        }
+  .hero-background-svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 200vh;
+    z-index: 1;
+    pointer-events: none;
+  }
+     .hero-background-svg {
+    display: none !important;
+  }
+}
 
-        .desk-top-hero-image {
-          display: none !important;
-        }
-          .desktop-svg {
-          display: none !important;}
-      }
-    `}
-  </style>
+  `}</style>
+
+
 
 
 
@@ -296,7 +192,7 @@ function Home() {
     alignItems: "center",
     background: "#FFFAF0",
     padding: "2rem 1rem",
-    marginTop: "14rem",
+    marginTop: "16rem",
     zIndex: 2,
     flexWrap: "wrap", // handles stacking on small screens
   }}

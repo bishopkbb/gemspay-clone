@@ -258,3 +258,7 @@ main .start-btn {
   font-weight: 350 !important;
   margin-top: -1rem !important;
 }
+
+body {
+  overflow-x: hidden;
+}
