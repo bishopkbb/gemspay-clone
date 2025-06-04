@@ -182,7 +182,7 @@ function Home() {
   }
 
   .mobile-svg-container {
-    padding-bottom: 4rem; /* Add this to give spacing */
+    padding-bottom: 10rem; /* Add this to give spacing */
   }
 }
 
@@ -595,7 +595,7 @@ function Home() {
   }
 
    .benefit-section {
-    margin-top: 5rem; /* or padding-top: 4rem; */
+    margin-top: 10rem; /* or padding-top: 4rem; */
   }
 }
 
