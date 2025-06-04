@@ -96,7 +96,7 @@ function Home() {
 
     {/* Right Image - Desktop only */}
     <div className="desk-top-hero-image" style={{ flex: 1, display: "flex", justifyContent: "flex-end", minWidth: 320, position: "relative", zIndex: 2 }}>
-      <img src={mainImage} alt="Main Visual" claasName="hero-image" style={{ maxWidth: "100%", height: "auto", maxHeight: "500px", borderRadius: "1.125rem", position: "relative", top: "-1.8rem", marginLeft: "auto", display: "block" }} />
+      <img src={mainImage} alt="Main Visual" className="hero-image" style={{ maxWidth: "100%", height: "auto", maxHeight: "500px", borderRadius: "1.125rem", position: "relative", top: "-1.8rem", marginLeft: "auto", display: "block" }} />
     </div>
   </div>
 
@@ -110,7 +110,7 @@ function Home() {
   </div>
 
   <style>{`
-    @media (max-width: 768px) {
+    @media (max-width: 786px) {
   .hero-section {
     flex-direction: column;
     text-align: center;
@@ -176,6 +176,13 @@ function Home() {
   }
      .hero-background-svg {
     display: none !important;
+  }
+  .hero-section {
+    margin-bottom: 3rem; /* Or more if needed */
+  }
+
+  .mobile-svg-container {
+    padding-bottom: 4rem; /* Add this to give spacing */
   }
 }
 
@@ -587,6 +594,9 @@ function Home() {
     margin-bottom: 2rem !important;
   }
 
+   .benefit-section {
+    margin-top: 5rem; /* or padding-top: 4rem; */
+  }
 }
 
 

@@ -1,11 +1,28 @@
 import React, { useState } from "react";
+import {
+  FaHome,
+  FaInfoCircle,
+  FaPlay,
+  FaBoxOpen,
+  FaDollarSign,
+  FaQuestionCircle,
+  FaEnvelope,
+} from "react-icons/fa";
 import logo from "../styles/logo.png";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
-  const navItems = ["Home", "About", "Demo", "Products", "Pricing", "Faqs", "Contact"];
+  const navItems = [
+    { name: "Home", icon: <FaHome /> },
+    { name: "About", icon: <FaInfoCircle /> },
+    { name: "Demo", icon: <FaPlay /> },
+    { name: "Products", icon: <FaBoxOpen /> },
+    { name: "Pricing", icon: <FaDollarSign /> },
+    { name: "Faqs", icon: <FaQuestionCircle /> },
+    { name: "Contact", icon: <FaEnvelope /> },
+  ];
 
   return (
     <header style={{ padding: "0.625rem 1.25rem", position: "relative", zIndex: 1 }}>
@@ -37,9 +54,12 @@ function Header() {
         {/* Navigation */}
         <nav className={`nav-links ${menuOpen ? "open" : ""}`}>
           <ul>
-            {navItems.map((name) => (
+            {navItems.map(({ name, icon }) => (
               <li key={name}>
-                <a href="#">{name}</a>
+                <a href="#">
+                  <span className="mobile-icon">{icon}</span>
+                  {name}
+                </a>
               </li>
             ))}
           </ul>
@@ -49,7 +69,7 @@ function Header() {
             <a href="#" className="get-started">Get Started</a>
           </div>
 
-          {/* Mobile Buttons - unchanged */}
+          {/* Mobile Buttons */}
           <div className="mobile-buttons">
             <a href="#" className="merchant-btn">Become a Merchant</a>
             <p>
@@ -59,6 +79,7 @@ function Header() {
         </nav>
       </div>
 
+      {/* Styles */}
       <style>{`
         .hamburger {
           display: none;
@@ -84,6 +105,14 @@ function Header() {
           color: black;
           font-weight: 500;
           font-size: 1.0313rem;
+          display: flex;
+          align-items: center;
+        }
+
+        .mobile-icon {
+          display: none;
+          margin-right: 0.5rem;
+          font-size: 1.1rem;
         }
 
         .desktop-buttons {
@@ -171,6 +200,11 @@ function Header() {
 
           .mobile-buttons {
             display: flex;
+          }
+
+          .mobile-icon {
+            display: inline-block;
+            color: #8e82fe;
           }
         }
       `}</style>
