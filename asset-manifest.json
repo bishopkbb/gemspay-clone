@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/gemspay-clone/static/css/main.77d017a8.css",
-    "main.js": "/gemspay-clone/static/js/main.0837e451.js",
+    "main.js": "/gemspay-clone/static/js/main.8fa5398c.js",
     "static/media/benefit.png": "/gemspay-clone/static/media/benefit.ec33b73c2d9ac0b66e03.png",
     "static/media/background.png": "/gemspay-clone/static/media/background.83a55ea9df4e923f1530.png",
     "static/media/feature1.png": "/gemspay-clone/static/media/feature1.df3b9d3e017592c6c746.png",
@@ -20,10 +20,10 @@
     "static/media/fa-v4compatibility.woff2": "/gemspay-clone/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/gemspay-clone/index.html",
     "main.77d017a8.css.map": "/gemspay-clone/static/css/main.77d017a8.css.map",
-    "main.0837e451.js.map": "/gemspay-clone/static/js/main.0837e451.js.map"
+    "main.8fa5398c.js.map": "/gemspay-clone/static/js/main.8fa5398c.js.map"
   },
   "entrypoints": [
     "static/css/main.77d017a8.css",
-    "static/js/main.0837e451.js"
+    "static/js/main.8fa5398c.js"
   ]
 }
